@@ -1,0 +1,33 @@
+.currently-reading {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #202020;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.currently-reading-cover {
+  width: 95px;
+  max-height: 150px;
+  border-radius: 7px;
+}
+
+.currently-reading-info {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.currently-reading-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.currently-reading-author {
+  font-weight: 200;
+  margin-bottom: 20px;
+}
