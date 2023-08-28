@@ -1,9 +1,11 @@
 import "./App.css";
-import { CurrentlyReading } from "./CurrentlyReading";
+import { CurrentlyReading } from "./components/CurrentlyReading";
 
 export function App() {
   return (
     <div className="App">
+      <h2>Currently reading</h2>
+      <hr />
       <CurrentlyReading
         bookTitle="Dune"
         bookAuthor="Frank Herbert"
