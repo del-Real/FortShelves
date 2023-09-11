@@ -21,7 +21,7 @@ export function PostCard({
           className="post-card-image"
           alt="Post Image"
           src={PostImage}
-          width="500"
+          width="750"
         />
       </div>
     </article>

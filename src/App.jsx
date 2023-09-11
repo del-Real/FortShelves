@@ -10,8 +10,9 @@ export function App() {
     <>
       <div className="App">
         <div className="left-panel">
-          <img src="/FortShelves_logo.svg" width="225" alt="FortShelves" />
-
+          <div className="app-logo">
+            <img src="/FortShelves_logo.svg" width="225" alt="FortShelves" />
+          </div>
           <hr />
           <CurrentlyReading />
           <hr />
