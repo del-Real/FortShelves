@@ -1,4 +1,35 @@
+/* Panels */
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-column: 1;
+}
+
+.center-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-column: 2;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-column: 3;
+}
+
+/* CurrentlyReading & BookProgressCard */
+
 .currently-reading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.book-progress-card {
   display: flex;
   align-items: center;
   color: #fff;
@@ -10,24 +41,53 @@
   border-radius: 10px;
 }
 
-.currently-reading-cover {
+.book-progress-cover {
   width: 95px;
   max-height: 150px;
   border-radius: 7px;
 }
 
-.currently-reading-info {
+.book-progress-info {
   display: flex;
   flex-direction: column;
   width: 250px;
 }
 
-.currently-reading-title {
+.book-progress-title {
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.currently-reading-author {
+.book-progress-author {
   font-weight: 200;
   margin-bottom: 20px;
+}
+
+/* UserCard */
+
+.user-card {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 25px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 1000px;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-nick {
+  font-weight: 200;
 }

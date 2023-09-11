@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: #161616;
+  color: #fff;
   font-family: system-ui;
   display: grid;
   place-content: center;
@@ -8,7 +9,14 @@ body {
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 90px;
+  width: 92vw;
+  height: 92vh;
+}
+
+hr {
+  width: 100%;
+  color: #6e6e6e;
 }

@@ -1,28 +1,33 @@
 import "./App.css";
-import { CurrentlyReading } from "./components/CurrentlyReading";
+import { CurrentlyReading } from "./components/CurrentlyReading/CurrentlyReadingPanel";
+import { UserCard } from "./components/User/UserCard";
+import { PostFeed } from "./components/Post/PostFeed";
+import { TrendingPanel } from "./components/Trending/TrendingPanel";
+import { LectureClubPanel } from "./components/LectureClub/LectureClubPanel";
 
 export function App() {
   return (
-    <div className="App">
-      <h2>Currently reading</h2>
-      <hr />
-      <CurrentlyReading
-        bookTitle="Dune"
-        bookAuthor="Frank Herbert"
-        bookProgression={56}
-      />
+    <>
+      <div className="App">
+        <div className="left-panel">
+          <img src="/FortShelves_logo.svg" width="225" alt="FortShelves" />
 
-      <CurrentlyReading
-        bookTitle="Grapes of Wrath"
-        bookAuthor="John Steinbeck"
-        bookProgression={86}
-      />
+          <hr />
+          <CurrentlyReading />
+          <hr />
+          <UserCard userName="Alberto del Real" userNick="RedSantar" />
+        </div>
 
-      <CurrentlyReading
-        bookTitle="V of Vendetta"
-        bookAuthor="Alan Moore"
-        bookProgression={15}
-      />
-    </div>
+        <div className="center-panel">
+          <PostFeed />
+        </div>
+
+        <div className="right-panel">
+          <TrendingPanel />
+          <hr />
+          <LectureClubPanel />
+        </div>
+      </div>
+    </>
   );
 }
