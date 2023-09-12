@@ -28,9 +28,17 @@ export function LectureClubPanel() {
       </div>
 
       <div className="currently-reading">
-        <LectureClubCard clubName="Recover Reading Habit Club" />
+        <LectureClubCard
+          clubName="Recover Reading Habit"
+          imagePath="src/assets/readinghabit.jpg"
+          color="#953bd8"
+        />
 
-        <LectureClubCard clubName="Non-fiction/essays fans" />
+        <LectureClubCard
+          clubName="Non-fiction/essays fans"
+          imagePath="src/assets/nonfiction.jpg"
+          color="#199a96"
+        />
       </div>
     </>
   );

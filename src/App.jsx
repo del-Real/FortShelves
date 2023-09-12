@@ -9,6 +9,8 @@ export function App() {
   return (
     <>
       <div className="App">
+        {/* LEFT PANEL */}
+
         <div className="left-panel">
           <div className="app-logo">
             <img src="/FortShelves_logo.svg" width="225" alt="FortShelves" />
@@ -19,10 +21,13 @@ export function App() {
           <UserCard userName="Alberto del Real" userNick="RedSantar" />
         </div>
 
+        {/* CENTER PANEL */}
+
         <div className="center-panel">
           <PostFeed />
         </div>
 
+        {/* RIGHT PANEL */}
         <div className="right-panel">
           <TrendingPanel />
           <hr />
