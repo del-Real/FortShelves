@@ -4,7 +4,7 @@ export function UserCard({ userName, userNick }) {
       <img
         className="user-image"
         alt="Book cover"
-        src={`https://unavatar.io/${userNick}`}
+        src={`https://unavatar.io/twitter/${userNick}`}
       />
       <div className="user-info">
         <a className="user-name">{userName}</a>

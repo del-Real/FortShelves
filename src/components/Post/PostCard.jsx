@@ -9,6 +9,11 @@ export function PostCard({
   return (
     <article className="post-card">
       <div className="post-card-header">
+        <img
+          className="post-card-avatar"
+          alt="Book cover"
+          src="https://unavatar.io/youtube/redsantar"
+        />
         <a className="post-card-book">/ {BookTitle}</a>
         <span className="post-card-type">{PostType}</span>
         <span className="post-card-usernick">{UserNick}</span>

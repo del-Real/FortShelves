@@ -1,6 +1,55 @@
 import { PostCard } from "./PostCard";
 
 export function PostFeed() {
+  const Post1 = () => {
+    return (
+      <div>
+        <p>
+          🌵 The Planet of Extremes 🏜️
+          <br />
+          Arrakis, also known as Dune, is a world of extremes - from the
+          scorching, unforgiving deserts to the intricate politics that shape
+          its destiny. Our guide dives deep into its unique ecosystems,
+          cultures, and the precious spice that fuels its conflicts.
+        </p>
+
+        <p>
+          🪶 The Mystique of the Spice 💎
+          <br />
+          The Spice Melange, a substance of unimaginable value, lies at the core
+          of Arrakis' intrigue. Discover its origins, properties, and the power
+          it wields over the galaxy's economy and politics.
+        </p>
+
+        <p>
+          🤴🏼 Houses, Heroes, and Villains 👑
+          <br />
+          Explore the noble Houses vying for control of Arrakis, from House
+          Atreides to House Harkonnen. Meet iconic characters like Paul Atreides
+          and Baron Harkonnen, each with their own complex motivations and
+          destinies.
+        </p>
+
+        <p>
+          🌐 The Universe of Dune 🌌
+          <br />
+          Our guide doesn't stop at Arrakis. We'll take you on a tour of the
+          expansive Dune universe, from its intricate political systems to its
+          epic battles and the prophetic visions that shape its course.
+        </p>
+
+        <p>
+          📚 A Treasure Trove of Knowledge 📜
+          <br />
+          Whether you're a die-hard Dune fan or a newcomer to this epic saga,
+          this guide is your key to unlocking the secrets of Arrakis. Dive into
+          the lore, unravel the mysteries, and enhance your understanding of
+          Frank Herbert's masterpiece.
+        </p>
+      </div>
+    );
+  };
+
   return (
     <div className="post-feed">
       <PostCard
@@ -8,21 +57,8 @@ export function PostFeed() {
         PostType="Review"
         UserNick="AwesomePaul"
         PostTitle="A deep comprenhensive guide about Arrakis"
-        PostContent="🌵 The Planet of Extremes 🏜️
-        Arrakis, also known as Dune, is a world of extremes - from the scorching, unforgiving deserts to the intricate politics that shape its destiny. Our guide dives deep into its unique ecosystems, cultures, and the precious spice that fuels its conflicts.
-        
-        🪶 The Mystique of the Spice 💎
-        The Spice Melange, a substance of unimaginable value, lies at the core of Arrakis' intrigue. Discover its origins, properties, and the power it wields over the galaxy's economy and politics.
-        
-        🤴🏼 Houses, Heroes, and Villains 👑
-        Explore the noble Houses vying for control of Arrakis, from House Atreides to House Harkonnen. Meet iconic characters like Paul Atreides and Baron Harkonnen, each with their own complex motivations and destinies.
-        
-        🌐 The Universe of Dune 🌌
-        Our guide doesn't stop at Arrakis. We'll take you on a tour of the expansive Dune universe, from its intricate political systems to its epic battles and the prophetic visions that shape its course.
-        
-        📚 A Treasure Trove of Knowledge 📜
-        Whether you're a die-hard Dune fan or a newcomer to this epic saga, this guide is your key to unlocking the secrets of Arrakis. Dive into the lore, unravel the mysteries, and enhance your understanding of Frank Herbert's masterpiece."
-        PostImage={"./src/assets/Dune.jpg"}
+        PostContent={<Post1 />}
+        PostImage={"./src/assets/post_images/Dune.jpg"}
       />
 
       <PostCard
@@ -44,7 +80,7 @@ export function PostFeed() {
         However, Tom Bombadil doesn't neatly fit into either category. Tolkien himself remained tantalizingly silent on this matter, perhaps leaving it up to us to decide. Could Tom be a wholly unique entity in Tolkien's universe, an enigmatic force of nature or an embodiment of Middle-earth itself?
         
         What are your thoughts on this captivating mystery? Do you lean more towards Vala, Maia, or another theory entirely? Let's unravel this riddle together! 🗝️💬 #Tolkien #TomBombadil #MiddleEarthMystery"
-        PostImage={"./src/assets/The Lord of the Rings.jpg"}
+        PostImage={"./src/assets/post_images/The Lord of the Rings.jpg"}
       />
 
       <PostCard
@@ -63,7 +99,7 @@ export function PostFeed() {
         Feel free to share your insights, interpretations, and any other themes you've uncovered in Akira. Let's engage in a thoughtful discussion and gain a deeper appreciation for the layers of meaning within this iconic manga.
         
         Happy reading and reflecting!"
-        PostImage={"./src/assets/Akira.jpg"}
+        PostImage={"./src/assets/post_images/Akira.jpg"}
       />
 
       <PostCard
@@ -76,7 +112,7 @@ export function PostFeed() {
         Could V be more of an embodiment of an idea, a symbol of defiance against totalitarianism, rather than a traditional character with a clear identity? Moore's work often invites readers to question conventional narratives and explore deeper themes.
         
         I'm curious to hear if anyone else has pondered this while reading the comic series or if you have any alternative theories about V's true nature in the graphic novel. "
-        PostImage={"./src/assets/V of Vendetta.jpg"}
+        PostImage={"./src/assets/post_images/V of Vendetta.jpg"}
       />
 
       <PostCard
@@ -91,7 +127,7 @@ export function PostFeed() {
         But on the other hand, it's quite the investment 💰, and I'm not sure if I can justify the price. I've already got the regular editions of the books, but this one just has that extra allure. Is it worth it? Have any of you picked up limited editions of your favorite books before? Did you regret it or treasure it forever? 🤷‍♀️🤷‍♂️
         
         Help a bookworm out! Should I go for it or stick with my trusty old copies? 📖🤓 #BookDilemma #GameOfThrones #LimitedEdition or #RegularEdition"
-        PostImage={"./src/assets/Game Of Thrones.jpg"}
+        PostImage={"./src/assets/post_images/Game Of Thrones.jpg"}
       />
 
       <PostCard
