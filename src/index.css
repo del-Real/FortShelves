@@ -10,18 +10,46 @@ body {
 
 h2 {
   margin: 0;
-  line-height: 1.15;
+  line-height: 1.25;
+  font-size: 1.4em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .App {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  gap: 90px;
+  gap: 85px;
   width: 65vw;
-  height: 92vh;
+  height: 100vh;
+  margin-top: 40px;
 }
 
 hr {
   width: 100%;
   color: #6e6e6e;
+}
+
+/* Hide scrollbar */
+
+/* Chrome */
+.center-panel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Edge */
+.center-panel {
+  -ms-overflow-style: none;
+}
+
+/* Firefox */
+.center-panel {
+  scrollbar-width: none;
 }

@@ -4,6 +4,55 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  margin-left: 35px;
+}
+
+.animate-text {
+  animation: typing-text 1.5s steps(20) 0s;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.1em;
+  width: 16ch;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.cursor {
+  display: inline-block;
+  height: 30px;
+  width: 2px;
+  margin-left: 5px;
+  animation: blink 1.5s infinite;
+  line-height: 1.7;
+}
+
+@keyframes typing-text {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 16ch;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
 }
 
 /* Panels */
@@ -11,7 +60,7 @@
 .left-panel {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 45px;
   grid-column: 1;
 }
 
@@ -27,7 +76,7 @@
 .right-panel {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 45px;
   grid-column: 3;
 }
 
@@ -113,15 +162,15 @@
 
 /* PostFeed & PostCard */
 
+.post-feed {
+  margin-top: 5px;
+}
+
 .post-card {
   background-color: #202020;
   margin-bottom: 25px;
   border-radius: 10px;
   width: 100%;
-}
-
-.post-feed {
-  margin-top: 10px;
 }
 
 .post-card-header {
@@ -146,10 +195,11 @@
 
 .post-card-type {
   border: 2px solid;
-  border-radius: 25px;
+  border-radius: 35px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 5px;
+  line-height: 1;
+  padding: 5px 10px 6px 10px;
 }
 
 .post-card-usernick {
@@ -157,7 +207,7 @@
 }
 
 .post-card-body {
-  padding: 10px 40px 20px 40px;
+  padding: 15px 55px 25px 55px;
 }
 
 .post-card-image {
@@ -172,8 +222,20 @@
   display: flex;
   flex-direction: column;
   font-size: 1.1em;
-  gap: 20px;
+  gap: 10px;
   font-weight: 600;
+}
+
+.trending-community {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.trending-community:hover {
+  background-color: #202020;
 }
 
 /* Lecture Club */
@@ -189,4 +251,22 @@
   padding: 25px;
   border-radius: 10px;
   border: 2px solid;
+}
+
+.button-app {
+  background: none;
+  border: none;
+  color: inherit;
+  display: flex;
+  gap: 15px;
+  font-size: 1em;
+  align-items: center;
+  font-weight: 600;
+  padding: 10px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.button-app:hover {
+  background-color: #202020;
 }
