@@ -6,6 +6,7 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 h2 {
@@ -25,9 +26,9 @@ a {
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  gap: 85px;
-  width: 65vw;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 50px;
+  width: 70vw;
   height: 100vh;
   margin-top: 40px;
 }

@@ -32,18 +32,21 @@ export function CurrentlyReading() {
           bookTitle="Dune"
           bookAuthor="Frank Herbert"
           bookProgression={56}
+          colorCard="#e6622a"
         />
 
         <BookProgressCard
           bookTitle="Grapes of Wrath"
           bookAuthor="John Steinbeck"
           bookProgression={86}
+          colorCard="#f4c039"
         />
 
         <BookProgressCard
           bookTitle="V of Vendetta"
           bookAuthor="Alan Moore"
-          bookProgression={15}
+          bookProgression={25}
+          colorCard="#8ca48d"
         />
       </div>
     </>

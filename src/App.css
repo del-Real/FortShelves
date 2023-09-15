@@ -70,7 +70,7 @@
   gap: 25px;
   grid-column: 2;
   overflow-y: scroll;
-  width: 775px;
+  min-width: 765px;
 }
 
 .right-panel {
@@ -97,7 +97,6 @@
 .book-progress-card {
   display: flex;
   align-items: center;
-  color: #fff;
   font-size: 0.8rem;
   justify-content: space-between;
   gap: 20px;
@@ -105,6 +104,7 @@
   padding: 25px;
   border-radius: 10px;
   border: 2px solid;
+  border-color: var(--card-color, #fff);
 }
 
 .book-progress-cover {
@@ -122,6 +122,7 @@
 .book-progress-title {
   font-size: 1.2rem;
   font-weight: 700;
+  color: var(--card-color, #fff);
 }
 
 .book-progress-author {
@@ -134,7 +135,6 @@
 .user-card {
   display: flex;
   align-items: center;
-  color: #fff;
   gap: 25px;
 }
 
@@ -158,6 +158,7 @@
 
 .user-nick {
   font-weight: 200;
+  opacity: 0.9;
 }
 
 /* PostFeed & PostCard */
@@ -191,6 +192,8 @@
 .post-card-book {
   border-radius: 0px 25px 25px 0px;
   font-weight: 600;
+  margin-left: -15px;
+  text-transform: uppercase;
 }
 
 .post-card-type {
@@ -200,10 +203,17 @@
   text-transform: uppercase;
   line-height: 1;
   padding: 5px 10px 6px 10px;
+  color: var(--card-color, #fff);
 }
 
 .post-card-usernick {
   font-weight: 200;
+}
+
+.post-like {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 .post-card-body {
@@ -212,8 +222,15 @@
 
 .post-card-image {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   max-height: 775px;
+  margin-bottom: -5px;
+}
+
+.post-card-icon {
+  border-radius: 10px 0px 0px 0px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Trending */
@@ -243,7 +260,6 @@
 .lecture-club-card {
   display: flex;
   align-items: center;
-  color: #fff;
   font-size: 0.8rem;
   justify-content: space-between;
   gap: 20px;
@@ -251,6 +267,7 @@
   padding: 25px;
   border-radius: 10px;
   border: 2px solid;
+  border-color: var(--card-color, #fff);
 }
 
 .button-app {
@@ -265,6 +282,7 @@
   padding: 10px;
   width: 200px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .button-app:hover {

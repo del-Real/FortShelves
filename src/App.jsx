@@ -5,7 +5,6 @@ import { UserCard } from "./components/User/UserCard";
 import { PostFeed } from "./components/Post/PostFeed";
 import { TrendingPanel } from "./components/Trending/TrendingPanel";
 import { LectureClubPanel } from "./components/LectureClub/LectureClubPanel";
-
 import { Wheel } from "@uiw/react-color";
 
 export function App() {
@@ -39,7 +38,7 @@ export function App() {
             {/* This is the div that you want to conditionally render */}
             {isHovered && (
               <div class="animation">
-                <h1 class="animate-text">Fortify your reading</h1>
+                <span class="animate-text">Fortify your reading</span>
                 <div class="cursor">|</div>
               </div>
             )}
@@ -68,14 +67,14 @@ export function App() {
             Set custom color
           </button>
 
-          <div className="color-wheel">
+          {/* <div className="color-wheel">
             <Wheel
               color={hex}
               onChange={(color) => {
                 setHex(color.hex);
               }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

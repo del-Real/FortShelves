@@ -32,6 +32,8 @@ const post1 = (
       expansive Dune universe, from its intricate political systems to its epic
       battles and the prophetic visions that shape its course.
     </p>
+
+    <p>#Arrakis #Atreides #BookGuide</p>
   </div>
 );
 
@@ -167,8 +169,10 @@ const post5 = (
 
     <p>
       Help a bookworm out! Should I go for it or stick with my trusty old
-      copies? #BookDilemma #GameOfThrones #LimitedEdition or #RegularEdition
+      copies?
     </p>
+
+    <p>#BookDilemma #GameOfThrones #WinterIsComing #BookHaul</p>
   </div>
 );
 
