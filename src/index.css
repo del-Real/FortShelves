@@ -1,3 +1,7 @@
+:root {
+  --custom-color: #fff; /* Default color (you can set any default color here) */
+}
+
 body {
   margin: 0;
   background: #161616;
@@ -13,6 +17,7 @@ h2 {
   margin: 0;
   line-height: 1.25;
   font-size: 1.4em;
+  color: var(--custom-color);
 }
 
 h3 {
@@ -35,7 +40,10 @@ a {
 
 hr {
   width: 100%;
-  color: #6e6e6e;
+  border: none;
+  height: 1px;
+  color: #444;
+  background-color: #444; /* Modern Browsers */
 }
 
 /* Hide scrollbar */

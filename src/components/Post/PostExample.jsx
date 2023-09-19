@@ -33,7 +33,7 @@ const post1 = (
       battles and the prophetic visions that shape its course.
     </p>
 
-    <p>#Arrakis #Atreides #BookGuide</p>
+    <p className="hastag">#Arrakis #Atreides #BookGuide</p>
   </div>
 );
 
@@ -69,7 +69,7 @@ const post2 = (
       itself?
     </p>
 
-    <p>#Tolkien #TomBombadil #MiddleEarthMystery</p>
+    <p className="hastag">#Tolkien #TomBombadil #MiddleEarthMystery</p>
   </div>
 );
 
@@ -172,7 +172,9 @@ const post5 = (
       copies?
     </p>
 
-    <p>#BookDilemma #GameOfThrones #WinterIsComing #BookHaul</p>
+    <p className="hastag">
+      #BookDilemma #GameOfThrones #WinterIsComing #BookHaul
+    </p>
   </div>
 );
 

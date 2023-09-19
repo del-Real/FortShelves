@@ -18,7 +18,15 @@ export function App() {
     setIsHovered(false);
   };
 
+  // Color wheel
   const [hex, setHex] = useState("#fff");
+
+  const [isWheelVisible, setWheelVisible] = useState(false);
+  const showColorWheel = () => {
+    setWheelVisible(!isWheelVisible);
+  };
+
+  document.documentElement.style.setProperty("--custom-color", hex);
 
   return (
     <>
@@ -37,9 +45,9 @@ export function App() {
 
             {/* This is the div that you want to conditionally render */}
             {isHovered && (
-              <div class="animation">
-                <span class="animate-text">Fortify your reading</span>
-                <div class="cursor">|</div>
+              <div className="animation">
+                <span className="animate-text">Fortify your reading</span>
+                <div className="cursor">|</div>
               </div>
             )}
           </div>
@@ -62,21 +70,32 @@ export function App() {
           <LectureClubPanel />
           <hr />
 
-          <button className="button-app">
-            <img src="/Color_circle_RGB.svg" width="30" alt="Color wheel" />
-            Set custom color
-          </button>
+          <div className="custom-color">
+            <button className="button-app" onClick={showColorWheel}>
+              <img src="/Color_circle_RGB.svg" width="30" alt="Color wheel" />
+              Set custom color
+            </button>
 
-          {/* <div className="color-wheel">
-            <Wheel
-              color={hex}
-              onChange={(color) => {
-                setHex(color.hex);
-              }}
-            />
-          </div> */}
+            {/* Conditional rendering */}
+            {isWheelVisible && (
+              <div className="color-wheel">
+                <Wheel
+                  width={165}
+                  height={165}
+                  color={hex}
+                  onChange={(color) => {
+                    setHex(color.hex);
+                  }}
+                />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>
   );
+}
+
+{
+  /* <h2 style={{ color: hex }}>Selected Color: {hex}</h2>; */
 }

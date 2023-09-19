@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export function PostCard({
   BookTitle,
   PostType,
@@ -19,6 +21,12 @@ export function PostCard({
     "--card-color": postTypeColor,
   };
 
+  const [isLiked, setLiked] = useState(false);
+
+  const handleLike = () => {
+    setLiked(!isLiked);
+  };
+
   return (
     <article className="post-card">
       <div className="post-card-header">
@@ -29,18 +37,19 @@ export function PostCard({
         </span>
         <span className="post-card-usernick">{UserNick}</span>
 
-        <div className="post-like">
+        {/* Ternary conditional in fill */}
+        <div className="post-like" onClick={handleLike}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-heart"
+            className="icon icon-tabler icon-tabler-heart"
             width="30"
             height="30"
             viewBox="0 0 24 24"
-            stroke-width="2"
+            strokeWidth="2"
             stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            fill={isLiked ? "currentColor" : "none"}
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
@@ -50,14 +59,16 @@ export function PostCard({
 
       <div className="post-card-body">
         <h3 className="post-card-title">{PostTitle}</h3>
-        <p className="post-card-content">{PostContent}</p>
+        <span className="post-card-content">{PostContent}</span>
       </div>
-      <img
-        className="post-card-image"
-        alt="Post Image"
-        src={PostImage}
-        width="750"
-      />
+      {PostImage && (
+        <img
+          className="post-card-image"
+          alt="Post Image"
+          src={PostImage}
+          width="750"
+        />
+      )}
     </article>
   );
 }
