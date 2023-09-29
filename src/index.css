@@ -7,10 +7,10 @@ body {
   background: #161616;
   color: #fff;
   font-family: system-ui;
-  display: grid;
-  place-content: center;
   min-height: 100vh;
   overflow-y: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {

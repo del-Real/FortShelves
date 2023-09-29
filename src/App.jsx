@@ -1,5 +1,7 @@
 import "./App.css";
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+
 import { CurrentlyReading } from "./components/CurrentlyReading/CurrentlyReadingPanel";
 import { UserCard } from "./components/User/UserCard";
 import { PostFeed } from "./components/Post/PostFeed";
@@ -94,8 +96,4 @@ export function App() {
       </div>
     </>
   );
-}
-
-{
-  /* <h2 style={{ color: hex }}>Selected Color: {hex}</h2>; */
 }
