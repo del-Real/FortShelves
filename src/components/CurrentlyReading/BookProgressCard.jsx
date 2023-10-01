@@ -6,7 +6,7 @@ export function BookProgressCard({
   bookProgression = 0,
   colorCard,
 }) {
-  const bookCover = "./src/assets/" + bookTitle + "_cover.jpg";
+  const bookCover = "/assets/" + bookTitle + "_cover.jpg";
   const cardStyle = {
     "--card-color": colorCard,
   };
