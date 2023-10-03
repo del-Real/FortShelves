@@ -53,10 +53,13 @@ export function App() {
               </div>
             )}
           </div>
-          <hr />
-          <CurrentlyReading />
-          <hr />
-          <UserCard userName="Alberto del Real" userNick="RedSantar" />
+
+          <div className="left-panel-user">
+            <hr />
+            <CurrentlyReading />
+            <hr />
+            <UserCard userName="Alberto del Real" userNick="RedSantar" />
+          </div>
         </div>
 
         {/* CENTER PANEL */}

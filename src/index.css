@@ -33,7 +33,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 50px;
-  width: 70vw;
+  /* width: 70vw; */
   height: 100vh;
   margin-top: 40px;
 }
@@ -61,4 +61,40 @@ hr {
 /* Firefox */
 .center-panel {
   scrollbar-width: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 15px 0px 15px;
+    gap: 30px;
+  }
+
+  body {
+    display: flex;
+  }
+
+  .left-panel-user {
+    display: none;
+  }
+
+  .right-panel {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    margin: 35px 5px 0px 5px;
+  }
+
+  .post-card {
+    margin-bottom: 15px;
+  }
 }
