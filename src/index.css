@@ -110,4 +110,12 @@ hr {
   .center-panel {
     margin-bottom: 50px;
   }
+
+  .app-logo {
+    height: 35px;
+  }
+
+  .animation {
+    top: 55px;
+  }
 }
