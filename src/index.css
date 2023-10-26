@@ -98,9 +98,9 @@ hr {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 756px) {
   .App {
-    margin: 35px 5px 0px 5px;
+    margin: 25px 5px 0px 5px;
   }
 
   .post-card {
