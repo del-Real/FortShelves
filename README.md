@@ -19,3 +19,13 @@
 
 ## License
 <a href="/del-Real/FortShelves/blob/main/LICENCE">MIT</a>
+
+
+## To do
+
+- Improve Responsive
+- Book Progress editable
+- Order by A-Z / % completed
+- Scrollable in the whole page
+- Add "Read more" function to posts
+- Form to add new posts
