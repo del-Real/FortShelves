@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/del-Real/FortShelves/blob/main/public/FortShelves_logo.png?raw=true" width="450" />
+  <img alt="Logo" src="https://github.com/del-Real/FortShelves/blob/main/public/FortShelves_logo.png?raw=true" width="350" />
 </div>
 
 <h3 align="center">
