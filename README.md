@@ -18,7 +18,7 @@
 <br />
 
 ## License
-<a href="/del-Real/FortShelves/blob/main/LICENCE">MIT</a>
+<a href="del-Real/FortShelves/blob/main/LICENCE">MIT</a>
 
 
 ## To do
